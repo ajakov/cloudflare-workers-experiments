@@ -1,0 +1,9 @@
+name = "my-app"
+type = "javascript"
+
+account_id = "3f94e0077fac054d037f415de3cc0876"
+workers_dev = true
+
+[env.production]
+route = "*.ajakov.dev/*"
+zone_id = "81e7b46e648c68c7fdf6a2694b898252"
