@@ -7,7 +7,15 @@ addEventListener('fetch', event => {
  */
 async function handleRequest(request) {
   return new Response('<html>' +
-      '<head><title>AJ</title></head><body><p>This website is powered by Cloudflare workers!</p><p><a href="https://aleksandarjakovljevic.com">Check out my personal website</a></a></p></body></html>', {
+      '<head>' +
+      '<title>AJ</title>' +
+      '</head>' +
+      '<body>' +
+      '<p>This website is powered by Cloudflare workers!</p>' +
+      '<p>Deployed usign GitHub actions</p>' +
+      '<p><a href="https://aleksandarjakovljevic.com">Check out my personal website</a></a></p>' +
+      '</body>' +
+      '</html>', {
     headers: { 'content-type': 'text/html' },
   })
 }
